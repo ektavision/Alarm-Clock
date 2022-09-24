@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+    <div id="container">
+        <img id="clock-image" src="clock.jpg" alt="clock">
+
+
+        <h1 id="clock-time">00:00:00</h1>
+
+
+        <form class="setAlarm">
+
+
+            <div class="set-alarm-field">
+                <input type="number" name="hr" placeholder="HH" max="23" min="00">
+                <input type="number" name="min" placeholder="MM" max="59" min="00">
+                <input type="number" name="sec" placeholder="SS" max="59" min="00">
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="set-alarm">Set </button>
+                <button type="reset" onclick="stopAlarm()" class="clear-alarm">Stop </button>
+            </div>
+            <hr>
+        </form>
+
+
+
+        <h3 id="ALarm-list">Upcoming Alarms</h3>
+
+
+        <div id="upcoming-alarms">
+            <ul id="upcoming-alarms-list">
+                <!-- The list item is added using javascript when set alarm button is pressed -->
+            </ul>
+        </div>
+    </div>
+
+
+    </div> 
+    <!-- External Javascript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>

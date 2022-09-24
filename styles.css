@@ -1,0 +1,276 @@
+body {
+    background-color: rgba(25, 25, 143, 0.404);
+    margin-top: 5%;
+    margin-left: 40%;
+    font-family: serif;
+    margin-right: 40%;
+
+}
+
+#container{
+
+    background: white;
+    height: auto;
+    width: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 9px;
+    border: 2px solid rgba(241, 28, 170, 0.884);
+    transition: 1s;
+
+}
+
+#container:hover {
+    box-shadow: 0px 0px 10px 5px rgba(241, 28, 170, 0.884);
+}
+
+#clock-image {
+    height: 40px;
+    padding: 20px 0px 0px 2px;
+}
+
+#clock-time {
+    font-size: 1.8rem;
+    padding: 2px 2px px 0px;
+    margin: 20px 0px 0px 0px;
+
+}
+
+#clock-time:hover {
+    color: rgba(241, 28, 170, 0.884);
+}
+
+.set-alarm-field {
+    width: 1px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+input {
+    max-width: 40px;
+    margin: 7px;
+    padding: 2px;
+
+}
+
+hr {
+
+
+    position: relative;
+    border: none;
+    height: 2px;
+    width: 150px;
+    background: black;
+    margin: 20px 0px 0px 15px
+}
+
+.set-alarm,
+.clear-alarm,
+input {
+    border: 1.4px solid black;
+    border-radius: 5px;
+
+}
+
+
+.set-alarm {
+    width: 55px;
+    margin: 0px 20px;
+    cursor: pointer;
+
+}
+
+
+.clear-alarm {
+    width: 55px;
+    margin: 0px 10px;
+    cursor: pointer;
+
+}
+
+input:hover {
+    color: rgba(241, 28, 170, 0.884);
+    border-color: rgba(241, 28, 170, 0.884);
+}
+
+.clear-alarm:hover {
+    color: rgba(241, 28, 170, 0.884);
+    border-color: rgba(241, 28, 170, 0.884);
+}
+
+.set-alarm:hover {
+    color: rgba(241, 28, 170, 0.884);
+    border-color: rgba(241, 28, 170, 0.884);
+}
+
+
+
+
+#ALarm-list {
+    margin-left: 20px;
+
+}
+
+.time-list {
+    list-style-type: none;
+    margin-bottom: 10px;
+
+}
+
+#ALarm-list:hover {
+
+    color: rgba(241, 28, 170, 0.884);
+
+}
+
+.time {
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+.deleteAlarm {
+    width: 50px;
+    height: 20px;
+    margin: 0px 5px 0px 2px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+}
+
+.deleteAlarm:hover {
+    border-color: rgba(241, 28, 170, 0.884);
+    color: rgba(241, 28, 170, 0.884);
+    transition: 1s;
+}
+
+
+/* body{
+    background-color: cyan;
+    margin-top: 5%;
+    margin-left: 40%; 
+    font-family:  serif;
+     margin-right: 40%;
+    
+}
+.outer{
+    background: white;
+    height: auto;
+    width: 250px;
+    border-radius: 9px;
+}
+.container{
+    align-content: center;
+    text-align: center;
+}
+
+.time-display{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: white;
+    width: 230px;
+    height: 10%;
+    color: white;
+    border-radius: 4px;
+    justify-content: center;
+    padding: 12px 10px;
+    margin: 14px 0px -26px 0px ;
+
+}
+
+
+.timer{
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+#clock{
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+
+}
+
+.alarm-heading{
+    color: black;
+    margin: 0px 29px;
+    padding: 22px 20px;
+}
+
+.set-alarm-field{
+    margin-top: -20px;
+    height: 40px;
+    
+    padding-top: 0px;
+}
+
+.controls button{
+    background-color: cyan;
+    border-color: black;
+    color: whitesmoke;
+    width: 105px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight:500;
+}
+
+.controls button:hover{
+    background-color: rgb(18, 202, 202);
+    color: black;
+    
+}
+
+.new-alarm{
+    width: 12px;
+}
+#myList{
+    list-style-type: none;
+    
+}
+
+#myList li{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    /* background-color: #5d759d; */
+/* border: 2px solid black;
+    height: 2rem;
+    margin: 20px -40px;
+    border-radius: 4px;
+    padding: 0px 10px 4px 4px ;
+ padding-top: 10px;
+    width: 238px;
+} */
+
+/* .time-list{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.time-list span{
+    width: 160px;
+    color: black;
+    margin-right: 21px;
+    
+}
+span{
+    margin: 2px 0px 0px 4px;}
+
+.time-list button:hover{
+    background-color: rgb(18, 202, 202);
+    color: rgb(255, 145, 0);
+}
+.time-list button{
+    background-color: cyan;
+    border-radius: 3px;
+    border-width: 2px;
+    height: 30px;
+    margin: 1px -35px;
+    padding-bottom: 2px;
+    border-color: black;
+    color: whitesmoke;
+}    */
